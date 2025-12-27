@@ -1,0 +1,113 @@
+.skills-container {
+    background-color: gainsboro;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title-skills {
+    font-size: 48px;
+    color: black;
+    font-family: "Oxanium", sans-serif;
+}
+
+.skills-slider {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+}
+
+/* Hide the second set of images on desktop to maintain original look */
+.skill-img-container img.secondary {
+    display: none;
+}
+
+.skill-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 50px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill-img-container img {
+    height: 20vh;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.1));
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    flex-shrink: 0;
+}
+
+.skill-img-container img:hover {
+    transform: scale(1.1) translateY(-5px);
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+}
+
+@media screen and (max-width: 768px) {
+    .skills-container {
+        width: 95vw;
+        max-width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    .skills-slider {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .title-skills {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    /* Show all images for the carousel loop */
+    .skill-img-container img.secondary {
+        display: block;
+    }
+
+    .skill-img-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        /* Ensure they stay in one line */
+        width: max-content;
+        gap: 0;
+        animation: scroll 15s linear infinite;
+    }
+
+    .skill-img-container img {
+        height: 180px;
+        width: 50vw;
+        padding: 10px;
+        box-sizing: border-box;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    /* .skills-slider::before,
+    .skills-slider::after {
+        display: none;
+        
+    } */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        /* Move by exactly half the container width (6 images = 300vw) */
+        transform: translateX(-50%);
+    }
+}

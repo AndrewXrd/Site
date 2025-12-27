@@ -1,0 +1,46 @@
+.about-container {
+    background-color: gainsboro;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.title-aboutme {
+    font-size: 50px;
+    color: black;
+    font-family: "Oxanium", sans-serif;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.context-aboutme {
+    color: black;
+    font-size: 25px;
+    padding: 35px;
+    padding-top: 0;
+    font-family: "Chakra Petch";
+    text-align: center;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .title-aboutme {
+        font-size: 35px;
+        margin-top: 45px;
+        margin-bottom: 20px;
+    }
+
+    .context-aboutme {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .about-container{
+        padding-bottom: 30px;
+    }
+
+}

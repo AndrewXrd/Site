@@ -1,0 +1,61 @@
+.card-container {
+    /* Set a maximum width for the whole card */
+    max-width: 300px;
+    /* Adjust this value as needed, but this should contain the text */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 10px;
+    /* Add some padding inside the card for better visual spacing */
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.1));
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.img-container {
+    width: 100%;
+    /* Set a max width for the image container to keep it from stretching too wide */
+    max-width: 250px;
+    /* Should be less than .card-container's max-width */
+    height: auto;
+
+}
+
+.card-container:hover {
+    transform: scale(1.1) translateY(-10px);
+    filter: drop-shadow(0 10px 15px gray);
+}
+
+.img {
+    /* height: 30vh; is often too tall; switch to a percentage or fixed height for consistency */
+    height: auto;
+    /* Let the height adjust automatically */
+    width: 100%;
+    /* Set a consistent aspect ratio if possible, or a max-height */
+    max-height: 250px;
+}
+
+.txt {
+    width: 100%;
+    color: black;
+    text-align: center;
+    /* Adding some padding to keep text from touching the card edges */
+    padding: 0 5px;
+}
+
+.project-title {
+    font-family: 'Chakra Petch';
+    font-size: 20px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.project-des {
+    font-family: 'Chakra Petch';
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 400;
+    padding: 0 5px;
+    max-width: 250px;
+}

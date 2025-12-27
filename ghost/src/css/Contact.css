@@ -1,0 +1,168 @@
+.contact-container {
+    background-color: gainsboro;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title-contact {
+    font-size: 50px;
+    color: black;
+    font-family: "Oxanium", sans-serif;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows items to wrap on smaller screens */
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 250px;
+}
+
+.ghost-logo {
+    width: 350px;
+    height: auto;
+    position: relative;
+    bottom: 45px;
+}
+
+.ghost-name {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Oxanium", sans-serif;
+    color: #555;
+    position: relative;
+    bottom: 75px;
+    left: 140px;
+    opacity: 0.5;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 300px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.social-icon {
+    width: 33px;
+    height: 33px;
+    background-size: cover;
+    flex-shrink: 0;
+    /* Prevents icon from shrinking */
+}
+
+.social-icon.linkedin {
+    background-image: url('../assets/linkedIn.png');
+}
+
+.social-icon.email {
+    background-image: url('../assets/gmail.png');
+}
+
+.social-icon.github {
+    background-image: url('../assets/github.png');
+}
+
+.social-icon.instagram {
+    background-image: url('../assets/insta.png');
+}
+
+.social-icon.facebook {
+    background-image: url('../assets/fb.png');
+}
+
+
+.social-item a {
+    color: #333;
+    font-family: "Oxanium", sans-serif;
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 18px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.social-item a:hover {
+    color: gray;
+    /* Example hover color */
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .title-contact {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .ghost-logo {
+        width: 180px;
+        position: static;
+        /* Remove relative positioning offsets */
+        margin-bottom: 20px;
+    }
+
+    .contact-left {
+        min-width: unset;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-right {
+        min-width: unset;
+        width: fit-content;
+        /* Fit to contents for better centering */
+        margin-left: auto;
+        margin-right: auto;
+        align-items: flex-start;
+        gap: 20px;
+        padding-bottom: 50px;
+    }
+
+    .social-item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .social-item a {
+        font-size: 16px;
+        word-break: break-word;
+        text-align: left;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -1,0 +1,109 @@
+.edu-container {
+    background-color: gainsboro;
+    height: 64vh;
+    margin-top: 30px;
+}
+
+.title-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-edu {
+    font-size: 50px;
+    color: black;
+    font-family: "Oxanium", sans-serif;
+}
+
+.edu-img {
+    justify-content: center;
+    height: 100%;
+    width: 75%;
+}
+
+.education-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.edu-item-ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Chakra Petch';
+    color: black;
+    margin-left: 30px;
+}
+
+.edu-item-al {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Chakra Petch';
+    color: black;
+    margin-left: 65px;
+}
+
+.edu-item-it {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Chakra Petch';
+    color: black;
+    margin-right: 25px;
+}
+
+
+
+.edu-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.edu-year {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.edu-desc {
+    font-size: 16px;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .edu-container {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .education-list {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 40px;
+        bottom: 50px;
+        gap: 30px;
+    }
+
+    .title-edu {
+        font-size: 30px;
+    }
+
+    .edu-img {
+        width: 90%;
+        height: auto;
+        transform: rotate(90deg);
+        position: relative;
+        right: 100px;
+        top: 155px;
+    }
+}
