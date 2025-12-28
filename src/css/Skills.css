@@ -54,9 +54,10 @@
 @media screen and (max-width: 768px) {
     .skills-container {
         width: 100%;
-        max-width: 100%;
+        max-width: 375px;
         overflow-x: hidden;
         box-sizing: border-box;
+        
     }
 
     .skills-slider {
@@ -71,9 +72,9 @@
     }
 
     /* Show all images for the carousel loop */
-    .skill-img-container img.secondary {
+    /* .skill-img-container img.secondary {
         display: block;
-    }
+    } */
 
     .skill-img-container {
         display: flex;
