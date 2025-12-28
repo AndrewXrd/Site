@@ -87,7 +87,7 @@
 
     .education-list {
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         position: relative;
         left: 40px;
         bottom: 50px;
