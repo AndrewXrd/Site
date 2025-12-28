@@ -59,12 +59,13 @@
 
 @media screen and (max-width: 768px) {
     .me {
-        height: 65vh;
+        height: 60vh;
         position: absolute;
         bottom: 0px;
         left: 50px;
         z-index: 1;
         margin-top: 20px;
+        margin-bottom: 0;
 
     }
 
