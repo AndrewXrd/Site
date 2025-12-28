@@ -1,6 +1,11 @@
 import '../css/Projects.css'
 import ProjectCard from '../components/ProjectCard'
 
+import infiniteMovie from '../assets/infinite-movie.png'
+import trvl from '../assets/Trvl.png'
+import locallens from '../assets/locallens.png'
+import onProcess from '../assets/on-process.png'
+
 function Projects() {
 
     return (
@@ -8,22 +13,22 @@ function Projects() {
             <p className='title-project'>Projects</p>
             <div className='cards'>
                 <ProjectCard
-                    src='src\assets\infinite-movie.png'
+                    src={infiniteMovie}
                     title='Infinity Movies'
                     dec='Clone of Netflix'
                 />
                 <ProjectCard
-                    src='src\assets\Trvl.png'
+                    src={trvl}
                     title='Trvl'
                     dec='An International travel'
                 />
                 <ProjectCard
-                    src='src\assets\locallens.png'
+                    src={locallens}
                     title='Local Lens SL'
                     dec='Fully functional local travel mobile app'
                 />
                 <ProjectCard
-                    src='src\assets\on-process.png'
+                    src={onProcess}
                 />
             </div>
 
