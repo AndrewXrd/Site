@@ -4,7 +4,7 @@ import figma from '../assets/figma.png'
 import html from '../assets/html.png'
 import css from '../assets/CSS.png'
 import js from '../assets/JavaScript.png'
-import react from '../assets/react.png'
+import react from '../assets/React.png'
 
 const skillsData = [
     { src: java, className: 'img-java', alt: 'Java' },
