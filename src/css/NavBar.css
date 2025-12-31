@@ -52,6 +52,53 @@
     cursor: pointer;
 }
 
+.navBar li:hover {
+    animation: rgbGlitch 0.3s steps(2);
+}
+
+
+@keyframes rgbGlitch {
+    0% {
+        transform: translate(0);
+        filter: none;
+    }
+
+    15% {
+        transform: translate(-3px, 2px);
+        filter:
+            drop-shadow(-4px 0 red) drop-shadow(4px 0 cyan);
+    }
+
+    30% {
+        transform: translate(3px, -2px);
+        filter:
+            drop-shadow(5px 0 red) drop-shadow(-5px 0 blue);
+    }
+
+    45% {
+        transform: translate(-2px, 1px);
+        filter:
+            drop-shadow(-6px 0 red) drop-shadow(6px 0 cyan);
+    }
+
+    60% {
+        transform: translate(2px, -1px);
+        filter:
+            drop-shadow(6px 0 red) drop-shadow(-6px 0 blue);
+    }
+
+    75% {
+        transform: translate(-1px, 0);
+        filter:
+            drop-shadow(-8px 0 red) drop-shadow(8px 0 cyan);
+    }
+
+    100% {
+        transform: translate(0);
+        filter: none;
+    }
+}
+
 .navBar-items-list {
     display: flex;
     align-items: center;

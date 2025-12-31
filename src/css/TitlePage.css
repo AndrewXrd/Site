@@ -19,15 +19,57 @@
     z-index: -1;
 }
 
+/* --- title text --- */
+
 .title {
     color: black;
-    font-size: 35vh;
+    font-size: 33vh;
     display: flex;
     justify-content: center;
     align-items: start;
     font-family: "Saira", sans-serif;
     margin-top: 30px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
+
+.glitch-active {
+    animation: rgbGlitch 0.35s infinite;
+}
+
+@keyframes rgbGlitch {
+    0% {
+        text-shadow:
+            2px 0 red,
+            -2px 0 blue;
+    }
+
+    25% {
+        text-shadow:
+            -2px -1px red,
+            2px 1px blue;
+    }
+
+    50% {
+        text-shadow:
+            1px 1px red,
+            -1px -1px blue;
+    }
+
+    75% {
+        text-shadow:
+            -1px 0 red,
+            1px 0 blue;
+    }
+
+    100% {
+        text-shadow:
+            2px 0 red,
+            -2px 0 blue;
+    }
+}
+
+/* ---------------------------- */
+
 
 .me {
     height: 90vh;
@@ -55,6 +97,7 @@
     right: 200px;
     font-family: 'Iceland', sans-serif;
     font-size: 30px;
+
 }
 
 .me {
@@ -66,8 +109,10 @@
     transition: filter 0.5s;
 }
 
+
+/* --- glitch animation --- */
 .me:hover {
-    animation: rgbGlitch 0.5s steps(2) ;
+    animation: rgbGlitch 0.5s steps(2);
 }
 
 
@@ -80,36 +125,31 @@
     15% {
         transform: translate(-3px, 2px);
         filter:
-          drop-shadow(-4px 0 red)
-          drop-shadow(4px 0 cyan);
+            drop-shadow(-4px 0 red) drop-shadow(4px 0 cyan);
     }
 
     30% {
         transform: translate(3px, -2px);
         filter:
-          drop-shadow(5px 0 red)
-          drop-shadow(-5px 0 blue);
+            drop-shadow(5px 0 red) drop-shadow(-5px 0 blue);
     }
 
     45% {
         transform: translate(-2px, 1px);
         filter:
-          drop-shadow(-6px 0 red)
-          drop-shadow(6px 0 cyan);
+            drop-shadow(-6px 0 red) drop-shadow(6px 0 cyan);
     }
 
     60% {
         transform: translate(2px, -1px);
         filter:
-          drop-shadow(6px 0 red)
-          drop-shadow(-6px 0 blue);
+            drop-shadow(6px 0 red) drop-shadow(-6px 0 blue);
     }
 
     75% {
         transform: translate(-1px, 0);
         filter:
-          drop-shadow(-8px 0 red)
-          drop-shadow(8px 0 cyan);
+            drop-shadow(-8px 0 red) drop-shadow(8px 0 cyan);
     }
 
     100% {
@@ -118,7 +158,7 @@
     }
 }
 
-
+/* --------------------------- */
 
 
 @media screen and (max-width: 768px) {

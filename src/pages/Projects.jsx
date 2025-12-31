@@ -1,6 +1,5 @@
 import '../css/Projects.css'
 import ProjectCard from '../components/ProjectCard'
-
 import infiniteMovie from '../assets/infinite-movie.png'
 import trvl from '../assets/Trvl.png'
 import locallens from '../assets/locallens.png'
@@ -16,11 +15,13 @@ function Projects() {
                     src={infiniteMovie}
                     title='Infinity Movies'
                     dec='Clone of Netflix'
+                    link='https://infinitemoviesbyxrd.netlify.app/'
                 />
                 <ProjectCard
                     src={trvl}
                     title='Trvl'
                     dec='An International travel'
+                    link='https://trvlbyxrd.netlify.app/'
                 />
                 <ProjectCard
                     src={locallens}
