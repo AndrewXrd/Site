@@ -1,11 +1,16 @@
+import { Routes, Route } from 'react-router-dom'
 import Home from './pages/home'
+import LocalLens from './pages/LocalLens'
+
 
 function App() {
 
   return (
-    <>
-      <Home />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/locallens" element={<LocalLens />} />
+    </Routes>
+
   )
 }
 

@@ -1,0 +1,150 @@
+.ll-container {
+    max-width: 100%;
+    width: 100%;
+    padding: 100px 20px 20px 20px;
+    background-color: gainsboro;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.ll-container * {
+    box-sizing: border-box;
+}
+
+/* ---------------- TOP SECTION ---------------- */
+
+.ll-top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.ll-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ll-logo img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.ll-content {
+    text-align: right;
+    margin-left: 15px;
+    color: black;
+}
+
+.ll-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: 'Chakra Petch', serif;
+}
+
+.ll-content p {
+    font-size: 17px;
+    font-family: "Oxanium", sans-serif;
+}
+
+/* ---------------- HORIZONTAL SCROLL SECTION ---------------- */
+
+.ll-images-division {
+    display: flex;
+    /* gap: 30px; removed in favor of margin on img for snap compat */
+    width: 100%;
+    padding: 40px 0 20px;
+    border-top: 2px solid #eee;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    /* Scroll Snap */
+    scroll-snap-type: x mandatory;
+
+    /* Styled Scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: #333 transparent;
+}
+
+/* Custom Scrollbar for Chrome/Safari */
+.ll-images-division::-webkit-scrollbar {
+    height: 8px;
+}
+
+.ll-images-division::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.ll-images-division::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.scroll-indicator {
+    text-align: center;
+    font-family: "Oxanium", sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    animation: bounceRight 2s infinite;
+}
+
+@keyframes bounceRight {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateX(0);
+    }
+
+    40% {
+        transform: translateX(5px);
+    }
+
+    60% {
+        transform: translateX(3px);
+    }
+}
+
+.ll-images-division img {
+    flex: 0 0 auto;
+    height: 500px;
+    border-radius: 20px;
+    scroll-snap-align: center;
+    margin-right: 30px;
+    /* Instead of gap sometimes behaving oddly with snap */
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 600px) {
+    .ll-top-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ll-content {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .ll-images-division img {
+        height: 350px;
+    }
+}

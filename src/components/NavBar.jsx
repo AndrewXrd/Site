@@ -2,8 +2,12 @@ import '../css/NavBar.css'
 import icon from '../assets/Ghost.png'
 import { useState, useEffect } from 'react';
 
+import { useNavigate, useLocation } from 'react-router-dom';
+
 function NavBar() {
     const [scrolled, setScrolled] = useState(false);
+    const navigate = useNavigate();
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -21,10 +25,26 @@ function NavBar() {
         };
     }, []);
 
+    useEffect(() => {
+        if (location.pathname === '/' && location.state && location.state.targetId) {
+            const element = document.getElementById(location.state.targetId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+                // Clear state to avoid scrolling on refresh? 
+                // Actually, replace state to clear it is better but might be overkill.
+                // navigate(location.pathname, { replace: true, state: {} });
+            }
+        }
+    }, [location]);
+
     const scrollToSection = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+        if (location.pathname !== '/') {
+            navigate('/', { state: { targetId: id } });
+        } else {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
         }
     };
 

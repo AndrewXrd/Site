@@ -27,6 +27,7 @@ function Projects() {
                     src={locallens}
                     title='Local Lens SL'
                     dec='Fully functional local travel mobile app'
+                    link='/locallens'
                 />
                 <ProjectCard
                     src={onProcess}
