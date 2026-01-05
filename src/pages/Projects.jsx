@@ -4,6 +4,7 @@ import infiniteMovie from '../assets/infinite-movie.png'
 import trvl from '../assets/Trvl.png'
 import locallens from '../assets/locallens.png'
 import onProcess from '../assets/on-process.png'
+import bakers from '../assets/bakers-bliss.png'
 
 function Projects() {
 
@@ -22,6 +23,12 @@ function Projects() {
                     title='Trvl'
                     dec='An International travel'
                     link='https://trvlbyxrd.netlify.app/'
+                />
+                <ProjectCard
+                    src={bakers}
+                    title='bakers Bliss'
+                    dec='Baked fresh. Served with love.'
+                    link='https://bakersbliss.netlify.app/'
                 />
                 <ProjectCard
                     src={locallens}
