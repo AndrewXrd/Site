@@ -16,19 +16,19 @@ function Projects() {
                     src={infiniteMovie}
                     title='Infinity Movies'
                     dec='Clone of Netflix'
-                    link='https://infinitemoviesbyxrd.netlify.app/'
+                    link='https://infinite-movies-blond.vercel.app/'
                 />
                 <ProjectCard
                     src={trvl}
                     title='Trvl'
                     dec='An International travel'
-                    link='https://trvlbyxrd.netlify.app/'
+                    link='https://trvlbyxrd.vercel.app/'
                 />
                 <ProjectCard
                     src={bakers}
                     title='bakers Bliss'
                     dec='Baked fresh. Served with love.'
-                    link='https://bakersbliss.netlify.app/'
+                    link='https://bakers-bliss.vercel.app/'
                 />
                 <ProjectCard
                     src={locallens}
