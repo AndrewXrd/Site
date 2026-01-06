@@ -22,6 +22,8 @@
     flex-wrap: wrap;
     /* Allow wrapping on smaller screens */
     width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 @media screen and (max-width: 768px) {

@@ -15,7 +15,7 @@ function Contact() {
                 <div className="contact-right">
                     <div className="social-item">
                         <div className="social-icon linkedin"></div>
-                        <a href="https://www.linkedin.com/in/anton-ignacious-andrew" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/anton-ignacious-andrew-4a95042b2/" target="_blank" rel="noopener noreferrer">
                             Anton Ignacious Andrew
                         </a>
                     </div>
