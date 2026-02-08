@@ -21,7 +21,6 @@
     position: relative;
 }
 
-/* Hide the second set of images on desktop to maintain original look */
 .skill-img-container img.secondary {
     display: none;
 }
@@ -53,11 +52,9 @@
 
 @media screen and (max-width: 768px) {
     .skills-container {
-        width: fit-content;
-        max-width: 375px;
+        width: 100%;
         overflow-x: hidden;
         box-sizing: border-box;
-        
     }
 
     .skills-slider {
@@ -71,16 +68,14 @@
         margin-bottom: 20px;
     }
 
-    /* Show all images for the carousel loop */
-    /* .skill-img-container img.secondary {
+    .skill-img-container img.secondary {
         display: block;
-    } */
+    }
 
     .skill-img-container {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        /* Ensure they stay in one line */
         width: max-content;
         gap: 0;
         animation: scroll 15s linear infinite;
@@ -95,11 +90,6 @@
         flex-shrink: 0;
     }
 
-    /* .skills-slider::before,
-    .skills-slider::after {
-        display: none;
-        
-    } */
 }
 
 @keyframes scroll {
@@ -108,7 +98,7 @@
     }
 
     100% {
-        /* Move by exactly half the container width (6 images = 300vw) */
+
         transform: translateX(-50%);
     }
 }

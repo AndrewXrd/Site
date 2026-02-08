@@ -34,10 +34,15 @@ function LocalLens() {
                         complementary experiences, and helping local hosts showcase their unique offerings.
                     </p>
                     <p>
-                        I build this with React-native with Expo Go and Google Firebase. As a MVP model I build the basic things
-                        of the app. Still I have to work on the backend to make it more secured and efficient app.
-                        So yeah... looking forward to launch into Play Store and App Store
-
+                        I build this with React-native with Expo Go for frontend and Google Firebase for backend. As a MVP model I build the basic things
+                        of the app. Booking and payment system is not included.
+                    </p>
+                    <p>
+                        GitHub:
+                        <br />
+                        <a href="https://github.com/AndrewXrd/LocalLensSL---Host-App">Host app</a>
+                        <br />
+                        <a href="https://github.com/AndrewXrd/LocalLensSL">User app</a>
                     </p>
                 </div>
             </section>
