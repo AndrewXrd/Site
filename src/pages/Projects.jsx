@@ -5,6 +5,7 @@ import trvl from '../assets/Trvl.png'
 import locallens from '../assets/locallens.png'
 import onProcess from '../assets/on-process.png'
 import bakers from '../assets/bakers-bliss.png'
+import HIT from '../assets/HIT.png'
 
 function Projects() {
 
@@ -35,6 +36,12 @@ function Projects() {
                     title='Local Lens SL'
                     dec='Fully functional local travel mobile app'
                     link='/locallens'
+                />
+                <ProjectCard
+                    src={HIT}
+                    title='HIT'
+                    dec='Mobile Fitness Tracking app'
+                    link='https://github.com/AndrewXrd/HIT'
                 />
                 <ProjectCard
                     src={onProcess}
