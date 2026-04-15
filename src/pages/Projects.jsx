@@ -41,7 +41,7 @@ function Projects() {
                     src={HIT}
                     title='HIT'
                     dec='Mobile Fitness Tracking app'
-                    link='https://github.com/AndrewXrd/HIT'
+                    link='/hit'
                 />
                 <ProjectCard
                     src={onProcess}
