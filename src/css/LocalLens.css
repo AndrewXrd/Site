@@ -148,3 +148,128 @@
         height: 350px;
     }
 }
+
+/* ---------------- COLLABORATION & SUPERVISION CARD ---------------- */
+
+.ll-collaboration-card {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.08);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 30px 0 30px auto;
+    max-width: 500px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.ll-collaboration-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.12);
+    background: rgba(255, 255, 255, 0.6);
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.ll-collab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 15px;
+}
+
+.ll-collab-badge {
+    background: #2b6cb0;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-family: "Oxanium", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.ll-virtusa-logo {
+    height: 28px;
+    width: auto;
+    object-fit: contain;
+}
+
+.ll-collab-description {
+    font-family: "Oxanium", sans-serif;
+    font-size: 14px;
+    color: #4a5568;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.ll-supervisor-section {
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    padding-top: 16px;
+}
+
+.ll-supervisor-label {
+    font-size: 12px;
+    color: #718096;
+    font-family: "Oxanium", sans-serif;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.ll-supervisor-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.ll-supervisor-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a202c;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.ll-supervisor-title {
+    font-size: 13px;
+    color: #4a5568;
+    font-family: "Oxanium", sans-serif;
+    margin-bottom: 12px;
+}
+
+.ll-linkedin-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #0077b5;
+    color: white !important;
+    text-decoration: none !important;
+    font-family: "Oxanium", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 8px;
+    width: fit-content;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.ll-linkedin-btn:hover {
+    background: #005987;
+    transform: scale(1.02);
+}
+
+.ll-linkedin-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+@media (max-width: 600px) {
+    .ll-collaboration-card {
+        margin: 25px auto;
+        max-width: 100%;
+    }
+}

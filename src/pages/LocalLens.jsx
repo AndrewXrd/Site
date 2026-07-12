@@ -5,7 +5,11 @@ import home from '../assets/home-screen.png'
 import front from '../assets/front-screen.jpg'
 import host from '../assets/host-screen.png'
 import codescreen from '../assets/code-screen1.png'
-import codescreen2 from '../assets/code-screen2.png'
+import onsite1 from '../assets/onsite1.jpg'
+import onsite2 from '../assets/onsite2.jpg'
+import onsite3 from '../assets/onsite3.jpg'
+import virtusaLogo from '../assets/virtusa-logo.svg'
+import linkedinIcon from '../assets/linkedIn.png'
 import { useEffect } from 'react'
 import NavBar from '../components/NavBar'
 
@@ -34,9 +38,35 @@ function LocalLens() {
                         complementary experiences, and helping local hosts showcase their unique offerings.
                     </p>
                     <p>
-                        I build this with React-native with Expo Go for frontend and Google Firebase for backend. As a MVP model I build the basic things
-                        of the app. Booking and payment system is not included.
+                        I built this project in collaboration with <strong>Virtusa Pvt Ltd</strong>, utilizing React Native with Expo Go for the frontend and Google Firebase for the backend. As an MVP model, the application implements core booking, recommendation, and host features, excluding final payment gateways.
                     </p>
+
+                    <div className="ll-collaboration-card">
+                        <div className="ll-collab-header">
+                            <span className="ll-collab-badge">Collaboration</span>
+                            <img src={virtusaLogo} alt="Virtusa Logo" className="ll-virtusa-logo" />
+                        </div>
+                        <p className="ll-collab-description">
+                            Developed under the industry-academic collaboration with Virtusa Pvt Ltd.
+                        </p>
+                        <div className="ll-supervisor-section">
+                            <span className="ll-supervisor-label">Project Supervisor:</span>
+                            <div className="ll-supervisor-info">
+                                <span className="ll-supervisor-name">Laksiri Balasuriya</span>
+                                <span className="ll-supervisor-title">Lead Consultant at Virtusa</span>
+                                <a
+                                    href="https://www.linkedin.com/in/laksiri-balasuriya-73a49619/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="ll-linkedin-btn"
+                                >
+                                    <img src={linkedinIcon} alt="LinkedIn Logo" className="ll-linkedin-icon" />
+                                    <span>Connect on LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                     <p>
                         GitHub:
                         <br />
@@ -52,7 +82,9 @@ function LocalLens() {
                 <img src={home} />
                 <img src={host} />
                 <img src={codescreen} />
-                <img src={codescreen2} />
+                <img src={onsite1} />
+                <img src={onsite2} />
+                <img src={onsite3} />
             </section>
             <div className="scroll-indicator">
                 Scroll to see more <span>&rarr;</span>
