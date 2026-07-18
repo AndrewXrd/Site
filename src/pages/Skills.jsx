@@ -5,9 +5,9 @@ import html from '../assets/html.png'
 import css from '../assets/CSS.png'
 import js from '../assets/JavaScript.png'
 import react from '../assets/React.png'
-import gemini from '../assets/gemini.svg'
-import claude from '../assets/claude.svg'
-import huggingface from '../assets/huggingface.svg'
+import gemini from '../assets/gemini.png'
+import claude from '../assets/claude.png'
+import chatgpt from '../assets/chatgpt.png'
 
 const skillsData = [
     { src: java, className: 'img-java', alt: 'Java' },
@@ -18,7 +18,7 @@ const skillsData = [
     { src: react, className: 'img-react', alt: 'React' },
     { src: gemini, className: 'img-gemini ai-icon-bg', alt: 'Gemini' },
     { src: claude, className: 'img-claude ai-icon-bg', alt: 'Claude AI' },
-    { src: huggingface, className: 'img-huggingface ai-icon-bg', alt: 'Hugging Face' },
+    { src: chatgpt, className: 'img-chatgpt ai-icon-bg', alt: 'ChatGPT' },
 ];
 
 function Skills() {

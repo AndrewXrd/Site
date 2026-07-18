@@ -6,6 +6,7 @@ import locallens from '../assets/locallens.png'
 import onProcess from '../assets/on-process.png'
 import bakers from '../assets/bakers-bliss.png'
 import HIT from '../assets/HIT.png'
+import AI from '../assets/ai-site.png'
 
 function Projects() {
 
@@ -44,6 +45,12 @@ function Projects() {
                     link='/hit'
                 />
                 <ProjectCard
+                    src={AI}
+                    title='AI Projects'
+                    dec='Smart solutions, built for tomorrow'
+                    link='/AiHeroSection'
+                />
+                <ProjectCard
                     src={onProcess}
                 />
             </div>
@@ -53,4 +60,4 @@ function Projects() {
 
 }
 
-export default Projects
+export default Projects
