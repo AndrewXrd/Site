@@ -5,6 +5,7 @@ import Education from "../pages/Education"
 import Skills from "../pages/Skills"
 import Projects from "../pages/Projects"
 import Contact from "../pages/Contact"
+import ScrollReveal from "../components/ScrollReveal"
 import '../css/Home.css'
 
 
@@ -16,17 +17,32 @@ function Home() {
             <div id="home">
                 <TitlePage />
             </div>
-            <div id="about">
-                <About />
-            </div>
-            <Education />
-            <Skills />
-            <div id="projects">
-                <Projects />
-            </div>
-            <div id="contact">
-                <Contact />
-            </div>
+            
+            <ScrollReveal>
+                <div id="about">
+                    <About />
+                </div>
+            </ScrollReveal>
+
+            <ScrollReveal>
+                <Education />
+            </ScrollReveal>
+
+            <ScrollReveal>
+                <Skills />
+            </ScrollReveal>
+
+            <ScrollReveal>
+                <div id="projects">
+                    <Projects />
+                </div>
+            </ScrollReveal>
+
+            <ScrollReveal>
+                <div id="contact">
+                    <Contact />
+                </div>
+            </ScrollReveal>
         </div>
 
     )

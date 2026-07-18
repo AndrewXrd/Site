@@ -57,6 +57,7 @@ function TitlePage() {
             <div className='roles'>
                 <p className='role1'>UI/UX Designer</p>
                 <p className='role2'>Front-End Developer</p>
+                <p className='role3' style={{fontFamily: "'Chakra Petch'", fontSize: "20px", margin: "5px 0", fontWeight: "600", textShadow: "1px 1px 2px rgba(0,0,0,0.5)"}}>AI Tools Expert</p>
             </div>
         </div>
     )
