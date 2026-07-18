@@ -1,5 +1,5 @@
 import '../css/NavBar.css'
-import icon from '../assets/Ghost.png'
+import icon from '../assets/Ghost-sm.png'
 import { useState, useEffect } from 'react';
 
 import { useNavigate, useLocation } from 'react-router-dom';

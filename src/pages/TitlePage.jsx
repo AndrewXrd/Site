@@ -1,6 +1,6 @@
 import '../css/TitlePage.css'
-import me from '../assets/Me.png'
-import bgimg from '../assets/Bg.jpg'
+import me from '../assets/Me-sm.png'
+import bgimg from '../assets/Bg-sm.jpg'
 import '@fontsource/chakra-petch';
 import { useEffect } from 'react';
 

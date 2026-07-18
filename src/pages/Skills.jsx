@@ -8,6 +8,9 @@ import react from '../assets/React.png'
 import gemini from '../assets/gemini.png'
 import claude from '../assets/claude.png'
 import chatgpt from '../assets/chatgpt.png'
+import huggingface from '../assets/hugging-face.png'
+import higgsfield from '../assets/higgsfield.png'
+import elevenlabs from '../assets/eleven-labs.png'
 
 const skillsData = [
     { src: java, className: 'img-java', alt: 'Java' },
@@ -19,6 +22,9 @@ const skillsData = [
     { src: gemini, className: 'img-gemini ai-icon-bg', alt: 'Gemini' },
     { src: claude, className: 'img-claude ai-icon-bg', alt: 'Claude AI' },
     { src: chatgpt, className: 'img-chatgpt ai-icon-bg', alt: 'ChatGPT' },
+    { src: huggingface, className: 'img-huggingface ai-icon-bg', alt: 'Hugging Face' },
+    { src: higgsfield, className: 'img-higgsfield ai-icon-bg', alt: 'Higgs Field' },
+    { src: elevenlabs, className: 'img-elevenlabs ai-icon-bg', alt: 'Eleven Labs' },
 ];
 
 function Skills() {
